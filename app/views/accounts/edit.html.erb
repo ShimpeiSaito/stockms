@@ -2,9 +2,18 @@
 
 <h1><%= @page_title %></h1>
 
-<div class="toolbar"><%= link_to "マイアカウントに戻る", :account %></div>
+<div class="toolbar">
+    <%= link_to :account do %>
+        <button type="button" class="btn btn-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+            </svg>
+            マイアカウントに戻る
+        </button>
+    <% end %>
+</div>
 
 <%= form_for @member, as: "account", url: :account do |form| %>
     <%= render "shared/user_form", form: form %>
-    <div class="submit_button"><%= form.submit "更新" %></div>
+    <div align="right"><input type="submit" class="btn btn-primary" value="更新"></div>
 <% end %>

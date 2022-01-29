@@ -152,15 +152,15 @@ footer {
 /* メニューバー */
 nav.menubar {
   padding: 2px;
-  background-color: #000;
-  color: #ccc;
+  background-color: #1C5438;
+  color: rgb(225, 217, 217);
   font-size: 40%;
   padding: 8px 16px;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 nav.menubar ul li:not(:last-child):after {
-  color: #ccc;
+  color: rgb(225, 217, 217);
   content: " | ";
   margin: 0 2px;
 }
@@ -169,20 +169,20 @@ nav.menubar ul li:not(:last-child):after {
 nav.menubar a { text-decoration: none; }
 
 /* メニューバーのリンク（未訪問） */
-nav.menubar a:link { color: #ccc; }
+nav.menubar a:link { color: rgb(225, 217, 217); }
 
 /* メニューバーのリンク（訪問済） */
-nav.menubar a:visited { color: #ccc; }
+nav.menubar a:visited { color: rgb(225, 217, 217); }
 
 /* メニューバーのリンク（マウスを合わせたとき） */
 nav.menubar a:hover {
-  color: #f88;
+  color: #D1D100;
   text-decoration: underline;
 }
 
 /* メニューバーのリンク（現在のページ） */
 nav.menubar span {
-  color: #ff8;
+  color: #F5F900;
   font-weight: bold;
 }
 

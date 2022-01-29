@@ -1,11 +1,11 @@
 /* 表：一覧表示、詳細表示 */
 table.list, table.attr {
-    font-size: 90%;
+    font-size: 105%;
     width: 100%;
   }
   
   table.list th, table.attr th {
-    background-color: #499;
+    background-color: #3BAF75;
     color: white;
     font-weight: normal;
   }
@@ -28,5 +28,5 @@ table.list, table.attr {
   }
   
   table.list td, table.attr td {
-    background-color: #cee;
+    background-color: #DCF3E8;
   }

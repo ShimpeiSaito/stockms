@@ -36,7 +36,7 @@ class AccountsController < ApplicationController
   # ストロング・パラメータ
   private def account_params
     params.require(:account).permit(
-      :login_id,
+      :user_id,
       :password,
       :name
     )
