@@ -27,7 +27,7 @@ class AccountsController < ApplicationController
     @member = User.new(account_params)
     if @member.save
       redirect_to :root, notice: "会員登録が完了しました。"
-      cookies.signed[:user_id] = { value: @member.id, expires: 20.minutes.from_now }
+      cookies.signed[:user_id] = { value: @member.id, expires: 60.minutes.from_now }
     else
       render "new"
     end
