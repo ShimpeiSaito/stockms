@@ -1,0 +1,19 @@
+ja:
+  activerecord:
+    models:
+      user: 会員情報
+      item: アイテム情報
+    attributes:
+      user:
+        login_id: ログインID
+        name: 氏名
+        current_password: 現在のパスワード
+        password: 新しいパスワード
+        password_confirmation: 新しいパスワードの確認
+      item:
+        name: アイテム名
+        amount: 現在数量
+        minimum: 最低限数量
+        category: カテゴリー
+        remarks: 備考
+        status: ステータス

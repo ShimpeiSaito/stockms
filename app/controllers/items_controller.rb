@@ -48,7 +48,7 @@ class ItemsController < ApplicationController
       end
     
       def update
-        @item = Item.new(item_params)
+        @item = Item.find(params[:id])
         @item.assign_attributes(item_params)
         @item.user = current_member
         if @item.save

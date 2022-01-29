@@ -5,4 +5,7 @@ class User < ApplicationRecord
 
     attr_accessor :current_password
     validates :password, presence: { if: :current_password }
+
+    validates :user_id, presence: { message: "を入力してください" }
+    validates :name, presence: { message: "を入力してください" }
 end
