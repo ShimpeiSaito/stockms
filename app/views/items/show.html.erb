@@ -1,0 +1,25 @@
+<% @page_title = @item.name %>
+<h1><%= @page_title %></h1>
+
+<table class="attr">
+  <tr>
+    <th width="100">アイテム名</th>
+    <td><%= @item.name %></td>
+  </tr>
+  <tr>
+    <th>現在の個数</th>
+    <td><%= @item.amount %>個</td>
+  </tr>
+  <tr>
+    <th>最低限の個数</th>
+    <td><%= @item.minimum %>個</td>
+  </tr>
+  <tr>
+    <th>カテゴリー</th>
+    <td><%= @item.category %></td>
+  </tr>
+  <tr>
+    <th>備考</th>
+    <td><%= simple_format(@item.remarks) %></td>
+  </tr>
+</table>

@@ -9,4 +9,8 @@ Rails.application.routes.draw do
   resource :session, only: [:create, :destroy]
   resource :account, except: [:destroy]
   resource :password, only: [:show, :edit, :update]
+
+  resources :items do
+    get "search", on: :collection
+  end
 end

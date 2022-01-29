@@ -13,6 +13,7 @@
 ActiveRecord::Schema.define(version: 2022_01_29_095859) do
 
   create_table "items", force: :cascade do |t|
+    t.integer "user_id", null: false
     t.string "name", null: false
     t.integer "amount", null: false
     t.integer "minimum", null: false
@@ -21,6 +22,7 @@ ActiveRecord::Schema.define(version: 2022_01_29_095859) do
     t.integer "status", default: 1
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_items_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
