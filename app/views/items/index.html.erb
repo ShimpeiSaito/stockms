@@ -13,10 +13,12 @@
     <% end %>
 </div>
 
-<%= form_tag :search_items, method: :get, class: "search" do %>
-    <%= text_field_tag "q", params[:q] %>
-    <%= submit_tag "検索" %>
-<% end %>
+<div style="margin-top:-50px">
+    <%= form_tag :search_items, method: :get, class: "search" do %>
+        <%= text_field_tag "q", params[:q] %>
+        <%= submit_tag "検索" %>
+    <% end %>
+</div>
 
 <br>
 
