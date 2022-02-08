@@ -248,3 +248,11 @@ aside#sidebar ul {
 aside#sidebar li {
   margin-bottom: 0.3em;
 }
+
+div.info {
+  margin-top: -8px;
+  background-color: #E8E1E1;
+  border: solid;
+  border-width: 2px;
+  border-color: #EA9198;
+}

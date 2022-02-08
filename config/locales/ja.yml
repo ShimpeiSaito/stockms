@@ -5,7 +5,7 @@ ja:
       item: アイテム情報
     attributes:
       user:
-        login_id: ログインID
+        user_id: ユーザID
         name: 氏名
         current_password: 現在のパスワード
         password: 新しいパスワード

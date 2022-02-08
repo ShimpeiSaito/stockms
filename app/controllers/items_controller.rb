@@ -30,6 +30,7 @@ class ItemsController < ApplicationController
       def create
         @item = Item.new(item_params)
         @item.user = current_member
+        @item.update_time = (Time.zone.now + 9 * 60 * 60).to_s(:db)
         if @item.save
           redirect_to @item, notice: "アイテムを追加しました。"
         else
@@ -51,6 +52,7 @@ class ItemsController < ApplicationController
         @item = Item.find(params[:id])
         @item.assign_attributes(item_params)
         @item.user = current_member
+        @item.update_time = (Time.zone.now + 9 * 60 * 60).to_s(:db)
         if @item.save
           redirect_to @item, notice: "在庫情報を更新しました。"
         else

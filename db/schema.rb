@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_29_095859) do
+ActiveRecord::Schema.define(version: 2022_02_08_005433) do
 
   create_table "items", force: :cascade do |t|
     t.integer "user_id", null: false
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 2022_01_29_095859) do
     t.integer "status", default: 1
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.datetime "update_time"
     t.index ["user_id"], name: "index_items_on_user_id"
   end
 

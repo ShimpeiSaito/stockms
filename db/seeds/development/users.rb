@@ -7,7 +7,7 @@ gnames = ["太郎", "次郎", "花子"]
     User.create(
         user_id: names[idx],
         name: "#{fnames[idx % 4]}#{gnames[idx % 3]}",
-        password: "stms",
-        password_confirmation: "stms"
+        password: "a",
+        password_confirmation: "a"
     )
 end
