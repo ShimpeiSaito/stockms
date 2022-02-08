@@ -8,7 +8,6 @@ class CreateItems < ActiveRecord::Migration[5.2]
       t.string :category, null: false
       t.text :remarks
       t.integer :status, default: 1
-      t.datetime :update_time, default: Time.now
       
       t.timestamps
     end
