@@ -1,5 +1,5 @@
 # stockms
 Home stock management system.
 
-# URL
+## URL
 https://stock-management-system-byss.herokuapp.com/
